@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja Przeglądarka PWA</title>
+    <style>
+        body { margin: 0; font-family: sans-serif; display: flex; flex-direction: column; height: 100vh; background: #1a1a1a; }
+        #nav { padding: 10px; display: flex; gap: 10px; background: #333; }
+        input { flex: 1; padding: 8px; border-radius: 5px; border: none; }
+        button { padding: 8px 15px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        iframe { flex: 1; border: none; background: white; }
+    </style>
+</head>
+<body>
+
+<div id="nav">
+    <input type="text" id="url" placeholder="Wpisz adres (np. google.com)">
+    <button onclick="loadPage()">Idź</button>
+</div>
+
+<iframe id="browser" src="about:blank"></iframe>
+
+<script>
+    function loadPage() {
+        const url = document.getElementById('url').value;
+        const proxy = "https://corrosion.cloud/proxy/"; // Przykładowy silnik proxy
+        
+        // Formułujemy link tak, aby silnik go zrozumiał
+        document.getElementById('browser').src = proxy + url;
+    }
+</script>
+
+</body>
+</html>
