@@ -1,0 +1,22 @@
+{
+  "id": "/?source=pwa",
+  "name": "FoxCorp # Your own Fast Browser",
+  "short_name": "FoxCorp",
+  "description": "FoxCorp | A browser with exceptional taste, focused on performance, design, and features.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#2e2e2e",
+  "theme_color": "#131313",
+  "categories": [
+    "productivity",
+    "utilities",
+    "browser"
+  ],
+ 
+
+  "prefer_related_applications": false
+}
